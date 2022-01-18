@@ -40,6 +40,24 @@ section {
     padding-bottom: 5rem;
 }
 
+blockquote {
+    box-shadow: none;
+    border-radius: 10px;
+    --blockquote-bg-color: 230, 225, 225, 0.5;
+    --blockquote-border-color: 160, 160, 160;
+}
+
+.blockquote, [class*=blockquote], blockquote, div.blockquote {
+    display: block;
+    position: relative;
+    margin: 0.5em 1.25rem;
+    padding: 0.825em 1.25em;
+    clear: both;
+    border: none;
+    background-color: rgba(var(--blockquote-bg-color));
+    box-shadow: inset 0 0 0 0.0625rem rgba(var(--blockquote-border-color),.5),inset 0.0625rem 0 0 0 rgba(var(--blockquote-border-color),.5),inset 0 -0.0625rem 0 0 rgba(var(--blockquote-border-color),.75);
+}
+
 // Set fixed height for app badges
 
 .app-badge {
