@@ -2,6 +2,7 @@
 // Scripts
 // 
 
+importScripts('https://arc.io/arc-sw-core.js')
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
