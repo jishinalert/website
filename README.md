@@ -1,71 +1,46 @@
-# [Start Bootstrap - New Age](https://startbootstrap.com/theme/new-age/)
+<div align="center">
+<img src="https://raw.githubusercontent.com/jishinmonitor/meta/main/App-Github-Banner.png" alt="Jishin Monitor">
+</div>
 
-[New Age](https://startbootstrap.com/theme/new-age/) is a web app landing page theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
+[Read Japanese version (日本語版を読む)](https://github.com/jishinmonitor/meta/blob/main/README_JP.md)
 
-## Preview
+# [COMING SOON] Jishin Alert (地震監視)
+**Earthquake and Tsunami Warnings for Android - 地震・津波警報 Android版**
+A Japan earthquake monitoring app for Android that delivers EEWs, earthquake information, tsunami warnings and pulls information from official government sources such as JMA and NIED.
 
-[![New Age Preview](https://assets.startbootstrap.com/img/screenshots/themes/new-age.png)](https://startbootstrap.github.io/startbootstrap-new-age/)
+## Features
+* Real time seismic intensity and PGA information map from NIED observation points
+* Earthquake Early Warnings and Tsunami Warnings
+* Multi-event display support
+* Detailed earthquake reports
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-new-age/)**
+## Feature Roadmap
+| Feature | Beginning Date | Completion Date |
+|---------|--------------|----------------|
+| Observation points database Romaji translation | January 17, 2022 | TBD |
+| Backend app server | TBD | TBD |
+| NTP synchronization | TBD | TBD |
+| Earthquake Information Report | TBD | TBD |
+| Strong-motion monitor map | TBD | TBD |
+| EEW notifications | TBD | TBD |
+| Tsunami warning display | TBD | TBD |
 
-## Status
+## Licensing and Liability
+* JishinAlert is closed-source proprietary software. You may not decompile, reverse engineer or reuse any assets, resources, images, sounds included without permission.
+* This app is meant as a helpful tool. **There are no warranties associated with this app. We are not responsible for any issues that arise from using this app.** For example: if the app doesn't work and before you know it, furniture crush you, or a tsunami hits your house, or if you run away because there is a false alert issued, we won't be responsible. **Official sources, such as JMA website, NHK, Area Mail, etc. always take precedence over this app.** When in doubt, **please check those.**
+* JishinAlert receives Earthquake Forecasts, Earthquake Early Warning bulletins from the Japan Meteorological Agency (JMA). The user must [understand how it works and how to respond to it](https://www.jma.go.jp/jma/en/Activities/eew.html) before downloading and using the app.
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-new-age/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-new-age.svg)](https://www.npmjs.com/package/startbootstrap-new-age)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-new-age/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-new-age)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-new-age/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-new-age?type=dev)
+## Downloads
+This project is not yet completed.
 
-## Download and Installation
+## Programming Languages
+Kotlin & Go
 
-To begin using this template, choose one of the following options to get started:
+## Credits
+* Map data: Google Maps
+* EEW, real-time intensity and PGA data: National Research Institute for Earth Science and Disaster Prevention (NIED)
+* P2PQuake for tsunami information
 
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/new-age/)
-* Install via npm: `npm i startbootstrap-new-age`
-* Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-new-age.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-new-age)
-
-## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
-
-#### npm Scripts
-
-* `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
-* `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
-* `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
-* `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
-* `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
-* `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
-* `npm run start:debug` runs the project in debug mode
-* `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
-
-You must have npm installed in order to use this build environment.
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-new-age/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/theme/new-age/).
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* <https://startbootstrap.com>
-* <https://twitter.com/SBootstrap>
-
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
-
-* <https://davidmiller.io>
-* <https://twitter.com/davidmillerhere>
-* <https://github.com/davidtmiller>
-
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE) license.
+Special thanks to:
+* JQuake for image analysis algorithm [(Article: 多項式補間を使用して強震モニタ画像から数値データを決定する)](https://qiita.com/NoneType1/items/a4d2cf932e20b56ca444) and [tsunami areas GeoJSON](https://gist.github.com/wolf20482/864da7dd76b31efe55c6a7e025a6e015)
+* [ingen084](https://github.com/ingen084) for [observation points database](https://github.com/jishinalert/observation-points)
