@@ -12,21 +12,14 @@ html(lang='en')
 
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
-        // Bootstrap icons
         link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
-
-        // Google fonts
         link(rel='preconnect', href='https://fonts.gstatic.com')
         link(href='https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&display=swap', rel='stylesheet')
         link(href='https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap', rel='stylesheet')
         link(href='https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap', rel='stylesheet')
-
-        // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
     body(id='page-top', oncontextmenu='return false')
-
-        // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.shadow-sm
             .container.px-5
                 a.navbar-brand.fw-bold(href='#page-top') JishinAlert
@@ -41,17 +34,11 @@ html(lang='en')
                             a.nav-link.me-lg-3(href='#download') Download
                         li.nav-item
                             a.nav-link.me-lg-3(href='index.html') 日本語
-                    // button.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(data-bs-toggle='modal', data-bs-target='#feedbackModal')
-                        span.d-flex.align-items-center
-                            i.bi-chat-text-fill.me-2
-                            span.small Send Feedback
 
-        // Mashead header
         header.masthead
             .container.px-5
                 .row.gx-5.align-items-center
                     .col-lg-6
-                        // Mashead text and app badges
                         .mb-5.mb-lg-0.text-center.text-lg-start
                             h1.display-1.lh-1.mb-3 JishinAlert coming soon™
                             p.lead.fw-normal.text-muted.mb-5 Japan earthquake monitoring app for Android that delivers you fast and accurate information. Powered by NIED's dense seismometers network across Japan.
@@ -61,7 +48,6 @@ html(lang='en')
                                 // a(href='#!')
                                     img.app-badge(src='assets/img/app-store-badge.svg', alt='...')
                     .col-lg-6
-                        // Masthead device mockup feature
                         .masthead-device-mockup
                             include includes/gradient-circle
                             include includes/shape-1
@@ -69,14 +55,9 @@ html(lang='en')
                             .device-wrapper
                                 .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
                                     .screen.bg-black
-                                        // PUT CONTENTS HERE:
-                                        // * * This can be a video, image, or just about anything else.
-                                        // * * Set the max width of your media to 100% and the height to
-                                        // * * 100% like the demo example below.
                                         video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
                                             source(src='assets/img/rt_earthquake_monitor.webm', type='video/webm')
 
-        // App features section
         section#features
             .container.px-5
                 .row.gx-5.align-items-center
@@ -84,32 +65,27 @@ html(lang='en')
                         .container-fluid.px-5
                             .row.gx-5
                                 .col-md-6.mb-5
-                                    // Feature item
                                     .text-center
                                         i.bi.bi-exclamation-triangle-fill
                                         h3.font-alt Earthquake Early Warnings
                                         p.text-muted.mb-0 Receive fast Earthquake Early Warnings directly on your device, with little battery usage.
                                 .col-md-6.mb-5
-                                    // Feature item
                                     .text-center
                                         i.bi.bi-soundwave
                                         h3.font-alt Real-time Seismic Monitor
                                         p.text-muted.mb-0 Zoom into your location, or pan across the country to view the progress of an earthquake in real time.
                             .row
                                 .col-md-6.mb-5.mb-md-0
-                                    // Feature item
                                     .text-center
                                         i.bi.bi-journal-check
                                         h3.font-alt Detailed Earthquake Information
                                         p.text-muted.mb-0 View detailed seismic intensity, tsunami and other information of an earthquake, right in the app.
                                 .col-md-6
-                                    // Feature item
                                     .text-center
                                         i.bi.bi-tsunami
                                         h3.font-alt Tsunami Warnings
                                         p.text-muted.mb-0 A tsunami might be created following an earthquake or other events such as volcanic eruptions. JishinAlert displays warning and tsunami information in an easy to understand manner.
                     .col-lg-4.order-lg-0
-                        // Features section device mockup
                         .features-device-mockup
                             include includes/gradient-circle
                             include includes/shape-1
@@ -117,14 +93,9 @@ html(lang='en')
                             .device-wrapper
                                 .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
                                     .screen.bg-black
-                                        // PUT CONTENTS HERE:
-                                        // * * This can be a video, image, or just about anything else.
-                                        // * * Set the max width of your media to 100% and the height to
-                                        // * * 100% like the demo example below.
                                         video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
                                             source(src='assets/img/tsunami_warning.webm', type='video/webm')
 
-        // Basic features section
         section.bg-light
             .container.px-5
                 .row.gx-5.align-items-center.justify-content-center.justify-content-lg-between
@@ -134,7 +105,6 @@ html(lang='en')
                     .col-sm-8.col-md-6
                         .px-5.px-sm-0
                             .features-device-mockup
-                                // img.img-fluid.rounded-circle(src='https://source.unsplash.com/u8Jn2rzYIps/900x900', alt='...')
                                 include includes/gradient-circle
                                 include includes/shape-1
                                 include includes/shape-2
@@ -144,7 +114,6 @@ html(lang='en')
                                             video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
                                                 source(src='assets/img/eew_notification.webm', type='video/webm')
 
-        // App badge section
         section#download.bg-gradient-primary-to-secondary
             .container.px-5
                 h2.text-center.text-white.font-alt.mb-4 Stay tuned! Subscribe to our newsletter. You can unsubscribe anytime.
@@ -153,15 +122,18 @@ html(lang='en')
                         img.app-badge(src='assets/img/google-play-badge.svg', alt='...')
                     // a(href='#!')
                         img.app-badge(src='assets/img/app-store-badge.svg', alt='...')
-                    form(action='https://app.getresponse.com/add_subscriber.html', method='POST')
+                    form(action='https://app.getresponse.com/add_subscriber.html', method='POST', id='newsletter-form')
                         p
                             | email:
                             input(type='text' name='email')
                         input(type='hidden', name='campaign_token', value='Z9Go2')
                         input(type='hidden', name='start_day', value='0')
-                        input(type='submit', value='Subscribe')
+                        // input(type='submit', value='Subscribe')
+                        button.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(onclick='document.getElementById("newsletter-form").submit()')
+                            span.d-flex.align-items-center
+                                i.bi-chat-text-fill.me-2
+                                span.small Subscribe
 
-        // Footer
         footer.bg-black.text-center.py-5
             .container.px-5
                 .text-white-50.small
@@ -172,8 +144,6 @@ html(lang='en')
                     // span.mx-1 &middot;
                     // a(href='#!') FAQ
 
-        // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
 
-        // Core theme JS
         script(src='js/scripts.js')
