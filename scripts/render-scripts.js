@@ -13,6 +13,8 @@ module.exports = function renderScripts() {
 
     const sourcePathScriptsJS = upath.resolve(upath.dirname(__filename), '../src/js/scripts.js');
     const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../dist/js/scripts.js');
+    const sourceArcScriptJS = upath.resolve(upath.dirname(__filename), '../src/js/arc-sw.js');
+    const destArcScriptJS = upath.resolve(upath.dirname(__filename), '../dist/arc-sw.js');
     
     const copyright = `/*!
 * Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
@@ -23,4 +25,8 @@ module.exports = function renderScripts() {
     const scriptsJS = fs.readFileSync(sourcePathScriptsJS);
     
     fs.writeFileSync(destPathScriptsJS, copyright + scriptsJS);
+
+    const arcJS = fs.readFileSync(sourceArcScriptJS);
+    
+    fs.writeFileSync(destArcScriptJS, arcJS);
 };
