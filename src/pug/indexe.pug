@@ -58,8 +58,9 @@ html(lang='en')
                             .device-wrapper
                                 .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
                                     .screen.bg-black
-                                        video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                        // video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
                                             source(src='assets/img/rt_earthquake_monitor.webm', type='video/webm')
+                                        img(src='assets/img/rt_earthquake_monitor.png', style='max-width: 100%; height: 100%;')
 
         section#features
             .container.px-5
@@ -96,8 +97,9 @@ html(lang='en')
                             .device-wrapper
                                 .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
                                     .screen.bg-black
-                                        video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                        // video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
                                             source(src='assets/img/tsunami_warning.webm', type='video/webm')
+                                        img(src='assets/img/tsunami_warning.png', style='max-width: 100%; height: 100%;')
 
         section.bg-light
             .container.px-5
@@ -114,8 +116,9 @@ html(lang='en')
                                 .device-wrapper
                                     .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
                                         .screen.bg-black
-                                            video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                            // video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
                                                 source(src='assets/img/eew_notification.webm', type='video/webm')
+                                            img(src='assets/img/eew_notification.png', style='max-width: 100%; height: 100%;')
 
         section#download.bg-gradient-primary-to-secondary
             .container.px-5
@@ -127,7 +130,7 @@ html(lang='en')
                         img.app-badge(src='assets/img/app-store-badge.svg', alt='...')
                     form(action='https://app.getresponse.com/add_subscriber.html', method='POST', id='newsletter-form')
                         p
-                            | email:
+                            | Email address:
                             input(type='text' name='email')
                         input(type='hidden', name='campaign_token', value='Z9Go2')
                         input(type='hidden', name='start_day', value='0')
